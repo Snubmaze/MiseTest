@@ -1,0 +1,12 @@
+services:
+  app:
+    build: .
+    environment:
+      APP_DATABASE_URL: sqlite+aiosqlite:////data/bookings.db
+    ports:
+      - "8000:8000"
+    volumes:
+      - booking_data:/data
+
+volumes:
+  booking_data:

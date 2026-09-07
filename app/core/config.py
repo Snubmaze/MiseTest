@@ -5,6 +5,7 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 class Settings(BaseSettings):
     app_name: str = "Restaurant Booking API"
     database_url: str = "sqlite+aiosqlite:///./bookings.db"
+    seed_demo_data: bool = True
 
     model_config = SettingsConfigDict(
         env_prefix="APP_",
