@@ -1,1 +1,1 @@
-"""Restaurant booking application."""
+
